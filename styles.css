@@ -1,0 +1,218 @@
+:root {
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.header {
+    height: 60px;
+    background-color: #f2f2f2;
+}
+
+.header__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__navbar li {
+    width: auto;
+    line-height: 60px;
+    padding: 0 15px;
+    font-size: 19px;
+}
+
+.header__navbar li, a {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar__selected {
+    transition: .5s;
+    background-color: #d6d4d4;
+}
+
+.header__finder {
+    display: flex;
+    column-gap: 15px;
+}
+
+.header__finder input, button {
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.header__finder button {
+    width: 80px;
+    background: none;
+    cursor: pointer;
+}
+
+#find_search {
+    border: 2px solid blue;
+    color: blue;
+}
+
+#find_clear {
+    border: 2px solid red;
+    color: red;
+}
+
+#finder {
+    width: 250px;
+    border: none;
+}
+
+.main_grid {
+    margin-top: 30px;
+    display: flex;
+}
+
+.main__grid__filters {
+    width: 22%;
+    min-width: 200px;
+    min-height: 500px;
+    border-right: 2px solid #d6d4d4;
+}
+
+.main__grid__vouchers {
+    width: 78%;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.vouchers__container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 30px;
+}
+
+.hide__vouchers__container {
+    display: none;
+}
+
+.voucher {
+    width: 22%;
+    height: 400px;
+    border: 1px solid;
+}
+
+.voucher__img {
+    width: 100%;
+    height: 130px;
+    background-color: #f2f2f2;
+}
+
+.voucher__text {
+    padding: 10px;
+    padding-top: 20px;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.voucher__text p {
+    margin: 10px 0;
+}
+
+.button_group button{
+    width: 46%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#edit_voucher {
+    background-color: rgb(37, 155, 240);
+}
+
+#remove_voucher {
+    background-color: rgb(240, 37, 37);
+}
+
+.button_group {
+    display: flex;
+    column-gap: 8%;
+}
+
+.create_voucher {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.show__create__voucher {
+    display: flex;
+}
+
+.create__voucher__form {
+    margin-top: 50px;
+    width: 300px;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.create__voucher__form input, button {
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 2px solid #d6d4d4;
+    padding: 0 10px;
+}
+
+.create__voucher__form button {
+    background-color: rgb(42, 108, 239);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.create__voucher__form p {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#description_area {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+}
