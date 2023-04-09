@@ -28,11 +28,46 @@
     <div class="main">
         <div class="main_grid wrapper">
             <div class="main__grid__filters">
-
+                <h2>Manage Vouchers</h2>
+                <div class="switcher__grid">
+                    <p>Sort by the most expensive tour</p>
+                    <div class="radioButton">
+                        <div class="switcher"></div>
+                    </div>
+                </div>
+                <div class="count__total__price">
+                    <h4>Count total vouchers price</h4>
+                    <div class="buttonCount">
+                        <button id="countTotalPrice">Count</button>
+                    </div>
+                    <p>Total price of tours: <span class="totalPriceOutput">0 €</span></p>
+                </div>
             </div>
 
             <div class="main__grid__vouchers">
-
+                <div class="edit__voucher">
+                    <h1>Edit Voucher</h1>
+                    <form action="/someaction" id="editVoucher" class="editVoucher">
+                        <span>
+                            <p>Location</p>
+                            <input type="text" name="country" placeholder="City, Country">
+                        </span>
+                        <span>
+                            <p>Description</p>
+                            <textarea id="description_area" name="description" rows="6" cols="50"></textarea>
+                        </span>
+                        <span>
+                            <p>Amount of days</p>
+                            <input type="number" name="days">
+                        </span>
+                        <span>
+                            <p>Total price (€)</p>
+                            <input type="number" name="price">
+                        </span>
+                        <button name="saveButton">Save</button>
+                        <button name="closeButton" class="closeEdit">Close</button>
+                    </form>
+                </div>
                 <div class="create_voucher">
                     <h1>Create Tour Voucher</h1>
                     <form action="/someaction" id="create__voucher__form" class="create__voucher__form">
@@ -54,11 +89,15 @@
                         </span>
                         <button>Submit</button>
                     </form>
+                    <div class="alertMessage" id="alertMessage">
+                        <p><span>Oh snap!</span> All field in the form need to be filed!</p>
+                        <div class="close__alert">
+                            <div class="close__button"></div>
+                        </div>
                 </div>
-                
-                <div class="vouchers__container">
+            </div>
+            <div class="vouchers__container">
                     
-                </div>
             </div>
         </div>
     </div>
